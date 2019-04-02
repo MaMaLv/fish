@@ -65,7 +65,7 @@
                     <span>TAGS</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="/archives">
                     <i class="iconfont icon-guidang2"></i>
                     <span>ARCHIVES</span>
@@ -80,6 +80,10 @@
             
         </ul>
     </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gradle-的编译周期"><span class="toc-text">Gradle 的编译周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gradle-Files"><span class="toc-text">Gradle Files</span></a></li></ol>
+</div>
     
 </div>
 
@@ -106,60 +110,38 @@
         
 
 
-<!-- 归档列表 -->
-
-<div class="archives-container">
-
-<div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
-                    <span class="tag-text">2019</span>
-                </span>
-    <ul>
+<div class="post-container">
+    <div class="post-title">
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>04-02</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/04/02/hello-world/">
-                        <span>
-                            Hello World
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2018-03-07 13:40:24</span></span>
         
-
-    </ul>
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-    <ul>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li>
-            <span>03-07</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/03/07/Gradle 的编译周期/">
-                        <span>
-                            Untitled
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <h3 id="Gradle-的编译周期"><a href="#Gradle-的编译周期" class="headerlink" title="Gradle 的编译周期"></a>Gradle 的编译周期</h3><ul>
+<li>初始化</li>
+<li>配置阶段</li>
+<li>执行阶段  </li>
+</ul>
+<h3 id="Gradle-Files"><a href="#Gradle-Files" class="headerlink" title="Gradle Files"></a>Gradle Files</h3><p>对于一个项目，基础配置文件如下：<br><img src="media/15204012249194/2DF796FF65EBB302AA78F7D005595567.png" alt="2DF796FF65EBB302AA78F7D005595567"></p>
+<p>一个项目有一个<code>setting.gradle</code> 、顶层<code>project</code>的<code>build.gradle</code>文件、每个<code>module</code>的<code>build.gradle</code>文件。</p>
+
         
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
 
-    </ul>
-</div>
+        <div id="lv-container">
+        </div>
 
+    </div>
 </div>
 
     </div>
@@ -200,7 +182,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = ""
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
